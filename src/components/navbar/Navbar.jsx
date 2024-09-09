@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,64 +24,64 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 container mx-auto transition-colors duration-300 ${
-        scrollPosition > 50 ? "bg-white" : ""
+      className={`fixed top-0 left-0 right-0 z-50 py-1 transition-colors duration-300 ${
+        scrollPosition > 50 ? "bg-white" : "bg-white"
       }`}>
-      <div className="flex items-center justify-between p-4 font-medium w-full">
+      <div className="flex items-center container mx-auto justify-between p-4 font-medium w-full">
         {/* Logo */}
         <div>
-          <Link to="/">
+          <a href="/">
             <img
               src="https://progress-solution.uz/storage/platforms/1700150090logo_(2)484.png"
               alt="logo"
               className="max-w-[150px]"
             />
-          </Link>
+          </a>
         </div>
 
         {/* Large screen links */}
         <ul className="hidden lg:flex space-x-6">
           <li>
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Biz haqimizda
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/portfolio"
+            <a
+              href="#portfolio"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Portfolio
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/services"
+            <a
+              href="#service"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Xizmatlar
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/clients"
+            <a
+              href="#clients"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Mijozlar
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/blogs"
+            <a
+              href="#blogs"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Bloglar
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/contact"
+            <a
+              href="#contact"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               Aloqa
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -131,52 +130,52 @@ const Navbar = () => {
         {isOpen && (
           <ul className="absolute top-16 left-0 w-full bg-white shadow-lg p-4 lg:hidden space-y-4">
             <li>
-              <Link
-                to="/about"
+              <a
+                href="#about"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Biz haqimizda
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/portfolio"
+              <a
+                href="#portfolio"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Portfolio
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/services"
+              <a
+                href="#service"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Xizmatlar
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/clients"
+              <a
+                href="#clients"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Mijozlar
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/blogs"
+              <a
+                href="#blogs"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Bloglar
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/contact"
+              <a
+                href="#contact"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 Aloqa
-              </Link>
+              </a>
             </li>
           </ul>
         )}

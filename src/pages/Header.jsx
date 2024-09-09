@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="image h-[450px] container mx-auto w-full px-3 min-h-screen flex flex-col items-start justify-center">
-      <div className="font-bold text-white text-[6px] xs:text-[18px] md:text-[30px] lg:text-[45px] xl:text-[55px]">
+    <div className="image h-[450px]  w-full px-3 min-h-[600px] flex flex-col items-start justify-center">
+      <div className="font-bold container mx-auto text-white text-[6px] xs:text-[18px] md:text-[30px] lg:text-[45px] xl:text-[55px]">
         <h1>ОТКРОЙТЕ ДЛЯ СЕБя</h1>
         <h1>
           НОВОЕ <span className="text-[#F24C1A]">В МИРЕ</span>

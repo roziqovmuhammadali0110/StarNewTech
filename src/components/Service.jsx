@@ -37,7 +37,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="py-10 bg-gray-100">
+    <div className="py-10 bg-gray-100" id="service">
       <h2 className="text-center text-3xl font-bold mb-8">
         Biz IT xizmatlarini barcha turlarini taqdim etamiz
       </h2>
