@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
+import logo from "../../assets/image.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
@@ -29,11 +29,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <a href="/">
-            <img
-              src="https://progress-solution.uz/storage/platforms/1700150090logo_(2)484.png"
-              alt="logo"
-              className="max-w-[150px]"
-            />
+            <img src={logo} alt="logo" className="max-w-[150px]" />
           </a>
         </div>
 

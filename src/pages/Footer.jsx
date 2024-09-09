@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
-
+import logo from "../assets/image.png";
 const Footer = () => {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
@@ -53,12 +53,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-t from-[#e0e6f8] to-[#f0f4ff] py-10 px-6 md:px-12 lg:px-24">
+    <footer className="bg-gradient-to-t from-[#fbfcfd] to-[#f9fafd] py-10 px-6 md:px-12 lg:px-24">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo and Social Media Links */}
         <div>
           <img
-            src="https://progress-solution.uz/storage/platforms/1700150090logo_(2)484.png"
+            src={logo}
             alt="Progress Solution Technologies"
             className="h-12 mb-4"
           />
