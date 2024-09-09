@@ -19,13 +19,13 @@ const Carusel = () => {
 
   return (
     <div className="container mx-auto" id="portfolio">
-      <div className="w-full flex items-center justify-center text-[40px] pt-10 font-medium">
+      <div className="w-full flex items-center justify-center text-[40px] xs:text-[20px] md:text-[28px] lg:text-[35px] xl:text-[40px] pt-10 font-medium">
         <h1>{t("carousel.title")}</h1>
       </div>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={3}
-        slidesPerView={3}
+        spaceBetween={2}
+        slidesPerView={2}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -35,7 +35,7 @@ const Carusel = () => {
         loop={true}
         pagination={{ clickable: true }}
         slideNextClass="true"
-        className="min-h-[500px] flex items-center justify-center"
+        className="xs:h-[200px] md:h-[300px] lg:h-[400px] flex items-center justify-center"
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}>
         {projects.map((project, index) => (
