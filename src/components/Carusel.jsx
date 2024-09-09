@@ -16,7 +16,7 @@ import "swiper/css/scrollbar";
 
 const Carusel = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="w-full flex items-center justify-center text-[40px] pt-10 font-medium">
         <h1>Loyihalarimiz bilan tanishing</h1>
       </div>
@@ -34,7 +34,7 @@ const Carusel = () => {
         loop={true}
         pagination={{ clickable: true }}
         slideNextClass="true"
-        className="min-h-[90vh] flex items-center justify-center"
+        className="min-h-[70vh] flex items-center justify-center"
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}>
         <SwiperSlide className="flex flex-col items-center justify-center">
