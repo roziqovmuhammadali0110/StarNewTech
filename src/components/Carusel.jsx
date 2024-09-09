@@ -47,8 +47,12 @@ const Carusel = () => {
               alt={project.name}
             />
             <div className="flex items-end gap-2">
-              <h1 className="text-[18px] font-medium">{project.name}</h1>
-              <p className="text-[12px] font-medium">{project.description}</p>
+              <h1 className="text-[18px] xs:text-[8px] md:text-[14px] lg:text-[18px] font-medium">
+                {project.name}
+              </h1>
+              <p className="text-[12px] xs:text-[8px] md:text-[10px] lg:text-[12px] font-medium">
+                {project.description}
+              </p>
             </div>
           </SwiperSlide>
         ))}
