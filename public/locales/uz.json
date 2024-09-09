@@ -53,20 +53,6 @@
   "client": {
     "title": "Bizning mijozlar va hamkorlar"
   },
-  "carusel": {
-    "title": "Loyihalarimiz bilan tanishing"
-  },
-  "projects": {
-    "bisyor": "Internet do'koni",
-    "agrobuy": "Internet do'koni",
-    "xalq_talim": "Veb-sayt",
-    "dana": "Internet do'koni",
-    "karyera_xizmati": "Veb tizim",
-    "profi_university": "Veb-sayt",
-    "ichki_hujjat": "Veb tizim",
-    "ijod_uz": "Veb-sayt",
-    "kzo_fvv": "Mobil ilova"
-  },
 
   "services": {
     "smm": {
@@ -112,5 +98,55 @@
   "best_quality_title": "Eng yaxshi sifat",
   "best_quality_description": "Bizning maqsadimiz sifat. Sifat bor joyda baraka, rizq hamisha bo'ladi va biz uchun eng muhimi mijozning mamnunligi",
   "it_management_title": "IT xizmatlarni boshqarish",
-  "it_management_description": "Siz o'zingizning mahsulotingizni har daqiqada nazorat qilishingiz mumkin va xohishingizga qarab o'zgartirib berishga tayyormiz"
+  "it_management_description": "Siz o'zingizning mahsulotingizni har daqiqada nazorat qilishingiz mumkin va xohishingizga qarab o'zgartirib berishga tayyormiz",
+  "carousel": {
+    "title": "Loyihalarimiz bilan tanishing",
+    "projects": [
+      {
+        "name": "Bisyor",
+        "description": "Internet do'koni",
+        "image": "17132696302145_75.png"
+      },
+      {
+        "name": "Agrobuy",
+        "description": "Internet do'koni",
+        "image": "17132696453354_75.png"
+      },
+      {
+        "name": "Xalq Ta'limi Info",
+        "description": "Veb-sayt",
+        "image": "17132696624512_75.png"
+      },
+      {
+        "name": "Dana",
+        "description": "Internet do'koni",
+        "image": "17132696805116_75.png"
+      },
+      {
+        "name": "Karyera Xizmati",
+        "description": "Veb tizim",
+        "image": "17132697076925_75.png"
+      },
+      {
+        "name": "Profi University",
+        "description": "Veb-sayt",
+        "image": "17132697237531_75.png"
+      },
+      {
+        "name": "Ichki hujjat almashinuvi",
+        "description": "Veb tizim",
+        "image": "1713269751821_75.png"
+      },
+      {
+        "name": "Ijod.uz",
+        "description": "Veb-sayt",
+        "image": "1713269765955_75.png"
+      },
+      {
+        "name": "KZO FVV",
+        "description": "Mobil ilova",
+        "image": "17132697791096_75.png"
+      }
+    ]
+  }
 }

@@ -53,20 +53,7 @@
   "client": {
     "title": "Our Clients and Partners"
   },
-  "carusel": {
-    "title": "Explore Our Projects"
-  },
-  "projects": {
-    "bisyor": "Online Store",
-    "agrobuy": "Online Store",
-    "xalq_talim": "Website",
-    "dana": "Online Store",
-    "karyera_xizmati": "Web System",
-    "profi_university": "Website",
-    "ichki_hujjat": "Web System",
-    "ijod_uz": "Website",
-    "kzo_fvv": "Mobile App"
-  },
+
   "services": {
     "smm": {
       "title": "SMM Service",
@@ -111,5 +98,55 @@
   "best_quality_title": "Best Quality",
   "best_quality_description": "Our goal is quality. Where there is quality, there is always blessing, and for us, the most important thing is customer satisfaction",
   "it_management_title": "IT Service Management",
-  "it_management_description": "You can control your product at any moment, and we are ready to adjust it according to your wishes"
+  "it_management_description": "You can control your product at any moment, and we are ready to adjust it according to your wishes",
+  "carousel": {
+    "title": "Explore Our Projects",
+    "projects": [
+      {
+        "name": "Bisyor",
+        "description": "Online Store",
+        "image": "17132696302145_75.png"
+      },
+      {
+        "name": "Agrobuy",
+        "description": "Online Store",
+        "image": "17132696453354_75.png"
+      },
+      {
+        "name": "Xalq Ta'limi Info",
+        "description": "Website",
+        "image": "17132696624512_75.png"
+      },
+      {
+        "name": "Dana",
+        "description": "Online Store",
+        "image": "17132696805116_75.png"
+      },
+      {
+        "name": "Karyera Xizmati",
+        "description": "Web System",
+        "image": "17132697076925_75.png"
+      },
+      {
+        "name": "Profi University",
+        "description": "Website",
+        "image": "17132697237531_75.png"
+      },
+      {
+        "name": "Ichki hujjat almashinuvi",
+        "description": "Web System",
+        "image": "1713269751821_75.png"
+      },
+      {
+        "name": "Ijod.uz",
+        "description": "Website",
+        "image": "1713269765955_75.png"
+      },
+      {
+        "name": "KZO FVV",
+        "description": "Mobile App",
+        "image": "17132697791096_75.png"
+      }
+    ]
+  }
 }
