@@ -4,14 +4,14 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-gray-50 py-16" id="about">
+    <section data-aos="fade-up-right" className="bg-gray-50 py-16" id="about">
       <h2 className="text-center xs:text-[24px] md:text-[33px] lg:text-[40px] text-[40px] font-bold mb-8">
         {t("about.title")}
       </h2>
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
           <img
-            src="https://progress-solution.uz/storage/about_us/17077285521697115425asasa727934.jpg" // O'zingiz yuklagan rasm manzilini o'rnating
+            src="https://progress-solution.uz/storage/about_us/17077285521697115425asasa727934.jpg"
             alt="IT Innovatsiyasi"
             className="rounded-lg shadow-lg"
           />

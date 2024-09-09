@@ -31,7 +31,12 @@ const Services = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-10 bg-gray-100" id="service">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      className="py-10 bg-gray-100"
+      id="service">
       <h2 className="text-center text-3xl font-bold mb-8">
         {t("services.header")}
       </h2>

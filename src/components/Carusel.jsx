@@ -18,7 +18,12 @@ const Carusel = () => {
   const projects = t("carousel.projects", { returnObjects: true });
 
   return (
-    <div className="container mx-auto" id="portfolio">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      className="container mx-auto"
+      id="portfolio">
       <div className="w-full flex items-center font-bold justify-center text-[40px] xs:text-[23px] md:text-[28px] lg:text-[35px] xl:text-[40px] pt-10 ">
         <h1>{t("carousel.title")}</h1>
       </div>
@@ -35,7 +40,7 @@ const Carusel = () => {
         loop={true}
         pagination={{ clickable: true }}
         slideNextClass="true"
-        className="xs:h-[200px] md:h-[300px] lg:h-[400px] flex items-center justify-center"
+        className="xs:h-[200px] md:h-[300px] lg:h-[500px] flex items-center justify-center"
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}>
         {projects.map((project, index) => (

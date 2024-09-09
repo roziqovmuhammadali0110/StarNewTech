@@ -2,7 +2,11 @@ import { t } from "i18next";
 
 const Solution = () => {
   return (
-    <div className="container mx-auto">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="container mx-auto">
       <div className="w-full pl-4 flex items-center justify-center xs:text-[18px] md:text-[30px] lg:text-[40px] pb-5 pt-10 font-medium">
         <h1>{t("solution_title")}</h1>
       </div>
