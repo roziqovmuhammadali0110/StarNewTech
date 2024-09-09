@@ -55,6 +55,7 @@
   },
 
   "services": {
+    "header": "Biz IT xizmatlarini barcha turlarini taqdim etamiz",
     "smm": {
       "title": "SMM xizmati",
       "description": "Ijtimoiy tarmoqlarni targ'ib qilish va targ'ib qilish uchun onlayn xizmat. Ijtimoiy tarmoqlarda obunachilar, ko'rishlar, sharhlar",

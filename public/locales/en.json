@@ -55,6 +55,7 @@
   },
 
   "services": {
+    "header": "We provide all types of IT services",
     "smm": {
       "title": "SMM Service",
       "description": "Online service for promoting and managing social networks. Subscribers, views, comments on social networks",

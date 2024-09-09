@@ -19,7 +19,7 @@ const Carusel = () => {
 
   return (
     <div className="container mx-auto" id="portfolio">
-      <div className="w-full flex items-center justify-center text-[40px] xs:text-[20px] md:text-[28px] lg:text-[35px] xl:text-[40px] pt-10 font-medium">
+      <div className="w-full flex items-center font-bold justify-center text-[40px] xs:text-[23px] md:text-[28px] lg:text-[35px] xl:text-[40px] pt-10 ">
         <h1>{t("carousel.title")}</h1>
       </div>
       <Swiper
