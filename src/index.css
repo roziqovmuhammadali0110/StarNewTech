@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .image {
   background-image: url("https://storage.kun.uz/source/2/rokNtgiYLwkjaW2_5mqhC0EMUn3qbtPA.jpg");
   background-size: cover;
