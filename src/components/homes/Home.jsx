@@ -7,7 +7,7 @@ import Solution from "../Solution";
 
 const Home = () => {
   return (
-    <div className="py-5 space-y-4 bg-gray-100">
+    <div className=" space-y-4 bg-gray-100">
       <Header />
       <About />
       <Carusel />

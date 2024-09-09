@@ -23,7 +23,6 @@ const Header = () => {
           <div className="font-bold xs:space-y-6 md:space-y-3 lg:space-y-0 container mx-auto text-white text-[6px] xs:text-[18px] md:text-[30px] lg:text-[45px] xl:text-[55px]">
             <h1>{t("header.openForYou")}</h1>
             <h1>
-              {t("header.newInTheWorld")}{" "}
               <span className="text-[#F24C1A]">
                 {t("header.newInTheWorld")}
               </span>
