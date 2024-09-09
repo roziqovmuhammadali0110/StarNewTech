@@ -1,33 +1,31 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const { t, i18n } = useTranslation();
 
-  // Menu toggle function
+  // Tilni o'zgartirish funksiyasi
+  const handleChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+    localStorage.setItem("i18nextLng", selectedLanguage); // Saqlash
+  };
+
+  // Saqlangan tilni olish
+  const language = localStorage.getItem("i18nextLng") || "uz";
+
+  // Menu toggle funksiyasi
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Scroll position function
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // Scroll pozitsiyasini aniqlash
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 py-1 transition-colors duration-300 ${
-        scrollPosition > 50 ? "bg-white" : "bg-white"
-      }`}>
-      <div className="flex items-center container mx-auto justify-between p-4 font-medium w-full">
+      className={`fixed top-0 left-0 right-0 z-50 py-1 transition-colors duration-300 bg-white`}>
+      <div className="flex items-center container mx-auto justify-between font-medium w-full">
         {/* Logo */}
         <div>
           <a href="/">
@@ -39,56 +37,54 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Large screen links */}
-        <ul className="hidden lg:flex space-x-6">
+        {/* Katta ekran uchun linklar */}
+        <ul className="hidden lg:flex space-x-5">
           <li>
             <a
               href="#about"
               className="hover:text-gray-700 hover:font-bold hover:underline">
-              Biz haqimizda
+              {t("abouts")}
             </a>
           </li>
           <li>
             <a
               href="#portfolio"
               className="hover:text-gray-700 hover:font-bold hover:underline">
-              Portfolio
+              {t("portfolio")}
             </a>
           </li>
           <li>
             <a
               href="#service"
               className="hover:text-gray-700 hover:font-bold hover:underline">
-              Xizmatlar
+              {t("service")}
             </a>
           </li>
           <li>
             <a
               href="#clients"
               className="hover:text-gray-700 hover:font-bold hover:underline">
-              Mijozlar
-            </a>
-          </li>
-          <li>
-            <a
-              href="#blogs"
-              className="hover:text-gray-700 hover:font-bold hover:underline">
-              Bloglar
+              {t("clients")}
             </a>
           </li>
           <li>
             <a
               href="#contact"
               className="hover:text-gray-700 hover:font-bold hover:underline">
-              Aloqa
+              {t("contact")}
             </a>
           </li>
         </ul>
 
-        {/* Custom language dropdown */}
-        <select name="language" id="language" className="ml-4">
-          <option value="uz">Uzbek</option>
+        {/* Til tanlash dropdown */}
+        <select
+          value={language}
+          name="Lng"
+          id="lng"
+          onChange={handleChange}
+          className="w-[100px] h-8 rounded-lg font-bold px-2 bg-slate-100 border-none outline-none text-slate-700">
           <option value="en">English</option>
+          <option value="uz">Uzbek</option>
         </select>
 
         {/* Mobile menu button */}
@@ -134,7 +130,7 @@ const Navbar = () => {
                 href="#about"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
-                Biz haqimizda
+                {t("abouts")}
               </a>
             </li>
             <li>
@@ -142,7 +138,7 @@ const Navbar = () => {
                 href="#portfolio"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
-                Portfolio
+                {t("portfolio")}
               </a>
             </li>
             <li>
@@ -150,7 +146,7 @@ const Navbar = () => {
                 href="#service"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
-                Xizmatlar
+                {t("service")}
               </a>
             </li>
             <li>
@@ -158,15 +154,7 @@ const Navbar = () => {
                 href="#clients"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
-                Mijozlar
-              </a>
-            </li>
-            <li>
-              <a
-                href="#blogs"
-                className="block hover:text-gray-700"
-                onClick={toggleMenu}>
-                Bloglar
+                {t("clients")}
               </a>
             </li>
             <li>
@@ -174,7 +162,7 @@ const Navbar = () => {
                 href="#contact"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
-                Aloqa
+                {t("contact")}
               </a>
             </li>
           </ul>

@@ -1,7 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="bg-gray-50 py-16 " id="about">
-      <h2 className="text-center text-[40px] font-bold mb-8">Biz Xaqimizda</h2>
+    <section className="bg-gray-50 py-16" id="about">
+      <h2 className="text-center xs:text-[24px] md:text-[33px] lg:text-[40px] text-[40px] font-bold mb-8">
+        {t("about.title")}
+      </h2>
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
           <img
@@ -12,38 +18,13 @@ const About = () => {
         </div>
         <div className="lg:w-1/2 w-full lg:pl-16">
           <span className="text-blue-500 bg-blue-100 rounded-full px-4 py-1 inline-block mb-4">
-            4+ YILLIK TAJRIBA
+            {t("about.experience")}
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
-            Dasturiy ta’minot innovatsiyasi bo’yicha to’g’ri yechim
+          <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4">
+            {t("about.description1")}
           </h2>
-          <p className="text-gray-600 mb-4">
-            OOO «Progress Solution Technologies» 2019 yilda yosh mutaxassislar
-            tomonidan tashkil etilgan bo‘lib, ularning IKT sohasidagi murakkab
-            loyihalarni amalga oshirishda boy amaliy tajribaga ega.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Kompaniya murakkab dasturiy ta’minot ishlab chiqish va texnologik
-            xizmatlar ko‘rsatishda jiddiy va asosiy tajribani qo‘lga kiritdi.
-            OOO «Progress Solution Technologies» yuqori texnologiyalar bozorida
-            muvaffaqiyatli rivojlanmoqda.
-          </p>
-          <p className="text-gray-600">
-            Bizning bozorimizda to‘rt yildan ortiq faoliyat yuritamiz va yuqori
-            texnologik IT-sohada keng ko‘lamli loyihalarni amalga oshirish
-            bo‘yicha tajribaga ega.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Kompaniya murakkab dasturiy ta’minot ishlab chiqish va texnologik
-            xizmatlar ko‘rsatishda jiddiy va asosiy tajribani qo‘lga kiritdi.
-            OOO «Progress Solution Technologies» yuqori texnologiyalar bozorida
-            muvaffaqiyatli rivojlanmoqda.
-          </p>
-          <p className="text-gray-600">
-            Bizning bozorimizda to‘rt yildan ortiq faoliyat yuritamiz va yuqori
-            texnologik IT-sohada keng ko‘lamli loyihalarni amalga oshirish
-            bo‘yicha tajribaga ega.
-          </p>
+          <p className="text-gray-600 mb-4">{t("about.description2")}</p>
+          <p className="text-gray-600">{t("about.description3")}</p>
         </div>
       </div>
     </section>

@@ -1,0 +1,115 @@
+{
+  "abouts": "About Us",
+  "portfolio": "Portfolio",
+  "service": "Services",
+  "clients": "Clients",
+  "contact": "Contact",
+  "header": {
+    "openForYou": "Open for Yourself",
+    "newInTheWorld": "New in the World",
+    "itWithUs": "IT with Us",
+    "moreDetails": "More Details"
+  },
+  "footer": {
+    "openForYou": "Develop your personal business and ideas with us perfectly",
+    "services": {
+      "smm": "SMM Service",
+      "technicalAssignment": "Technical Specification (TS)",
+      "telegramBot": "Telegram Bot",
+      "seo": "SEO Service",
+      "mobileApp": "Mobile App",
+      "aiService": "AI Service"
+    },
+    "latestBlogs": {
+      "title": "Latest blogs",
+      "webSite": "What is a website? What to pay attention to when creating a site?",
+      "seo": "Why is SEO necessary?",
+      "businessStrategy": "The main goal of business strategy"
+    },
+    "newsletter": {
+      "title": "Notice",
+      "description": "Progress Solution Technologies is a company based in Tashkent, providing IT project development, web design, SEO, SMM, and other services.",
+      "namePlaceholder": "Please enter your name...",
+      "phonePlaceholder": "Please enter your phone number...",
+      "submit": "Send",
+      "loading": "Loading...",
+      "error": {
+        "required": "Please fill out all fields.",
+        "phone": "Please enter a valid phone number."
+      },
+      "notification": {
+        "success": "Successfully sent",
+        "failure": "Error sending"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "experience": "4+ YEARS OF EXPERIENCE",
+    "description1": "Progress Solution Technologies LLC, established by young specialists in 2019, has extensive practical experience in implementing complex ICT projects.",
+    "description2": "The company has gained serious and fundamental experience in developing complex software and providing technological services. Progress Solution Technologies LLC is successfully developing in the high-tech market.",
+    "description3": "We have been operating in our market for over four years and have experience in implementing large-scale projects in the high-tech IT sector."
+  },
+  "client": {
+    "title": "Our Clients and Partners"
+  },
+  "carusel": {
+    "title": "Explore Our Projects"
+  },
+  "projects": {
+    "bisyor": "Online Store",
+    "agrobuy": "Online Store",
+    "xalq_talim": "Website",
+    "dana": "Online Store",
+    "karyera_xizmati": "Web System",
+    "profi_university": "Website",
+    "ichki_hujjat": "Web System",
+    "ijod_uz": "Website",
+    "kzo_fvv": "Mobile App"
+  },
+  "services": {
+    "smm": {
+      "title": "SMM Service",
+      "description": "Online service for promoting and managing social networks. Subscribers, views, comments on social networks",
+      "icon": "https://progress-solution.uz/storage/services/1702638443smm223.svg"
+    },
+    "technical_task": {
+      "title": "Technical Task Writing",
+      "description": "Writing of Technical Specifications (TS)",
+      "icon": "https://progress-solution.uz/storage/services/1702638550interface-control-sv263.svg"
+    },
+    "telegram_bot": {
+      "title": "Telegram Bot",
+      "description": "Telegram bot is an automated Telegram service",
+      "icon": "https://progress-solution.uz/storage/services/1699451253Bot667.svg"
+    },
+    "seo": {
+      "title": "SEO Service",
+      "description": "SEO optimization - this is ensuring your site is above competitors",
+      "icon": "https://progress-solution.uz/storage/services/1699451061Search-Engine-Optimi20.svg"
+    },
+    "mobile_app": {
+      "title": "Mobile Application",
+      "description": "Mobile application - a mobile program developed for a specific platform",
+      "icon": "https://progress-solution.uz/storage/services/1699450855icons8-mobile-app-65463.png"
+    },
+    "ai": {
+      "title": "AI Service",
+      "description": "AI - automatic data reception and transmission through artificial intelligence",
+      "icon": "https://progress-solution.uz/storage/services/16994504083838.png"
+    }
+  },
+  "solution_title": "We truly offer new IT solutions",
+  "risk_management_title": "Risk Management",
+  "risk_management_description": "We are ready to produce your product on time and with quality",
+  "analytic_solution_title": "Analytical Solution",
+  "analytic_solution_description": "Our team is ready to solve any analytical problem with you",
+  "business_security_title": "Business Security",
+  "business_security_description": "The most important aspect of business is mutual trust and security. We guarantee you strong trust and security",
+  "product_analysis_title": "Product Analysis",
+  "product_analysis_description": "We are ready to analyze your product at every step, everywhere, and we are happy to do so",
+  "best_quality_title": "Best Quality",
+  "best_quality_description": "Our goal is quality. Where there is quality, there is always blessing, and for us, the most important thing is customer satisfaction",
+  "it_management_title": "IT Service Management",
+  "it_management_description": "You can control your product at any moment, and we are ready to adjust it according to your wishes"
+}

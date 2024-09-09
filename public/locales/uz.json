@@ -1,0 +1,116 @@
+{
+  "abouts": "Biz haqimizda",
+  "portfolio": "Portfolio",
+  "service": "Xizmatlar",
+  "clients": "Mijozlar",
+  "contact": "Aloqa",
+  "header": {
+    "openForYou": "O'zingiz uchun oching",
+    "newInTheWorld": "Dunyoda yangi",
+    "itWithUs": "IT biz bilan",
+    "moreDetails": "Batafsil"
+  },
+  "footer": {
+    "openForYou": "Shaxsiy biznes va g‘oyalaringizni biz bilan mukammal tarzda rivojlantiring",
+    "services": {
+      "smm": "SMM xizmati",
+      "technicalAssignment": "Texnik vazifa (TV)",
+      "telegramBot": "Telegram bot",
+      "seo": "SEO xizmati",
+      "mobileApp": "Mobil ilova",
+      "aiService": "AI xizmati"
+    },
+    "latestBlogs": {
+      "title": "Eng so'nggi bloglar",
+      "webSite": "Web sayt nima? Sayt yaratishda nimalarga e’tibor qaratish kerak?",
+      "seo": "SEO nima uchun kerak?",
+      "businessStrategy": "Biznes strategiyadan ko‘zlangan asosiy maqsad"
+    },
+    "newsletter": {
+      "title": "Xabarnoma",
+      "description": "Progress Solution Technologies - Toshkentda joylashgan kompaniya bo‘lib, mijozlarning IT loyihalarini ishlab chiqish, web-saytlarini loyihalash, SEO, SMM va boshqa servislarga xizmat ko‘rsatadi.",
+      "namePlaceholder": "Iltimos ismingizni kiriting...",
+      "phonePlaceholder": "Iltimos telefon raqamingizni kiriting...",
+      "submit": "Jo'natish",
+      "loading": "Yuklanmoqda...",
+      "error": {
+        "required": "Iltimos, barcha maydonlarni to'ldiring.",
+        "phone": "Iltimos, to'g'ri telefon raqamini kiriting."
+      },
+      "notification": {
+        "success": "Muvaffaqiyatli yuborildi",
+        "failure": "Yuborishdagi xatolik"
+      }
+    }
+  },
+  "about": {
+    "title": "Biz Haqimizda",
+    "experience": "4+ YILLIK TAJRIBA",
+    "description1": "OOO «Progress Solution Technologies» 2019 yilda yosh mutaxassislar tomonidan tashkil etilgan bo‘lib, ularning IKT sohasidagi murakkab loyihalarni amalga oshirishda boy amaliy tajribaga ega.",
+    "description2": "Kompaniya murakkab dasturiy ta’minot ishlab chiqish va texnologik xizmatlar ko‘rsatishda jiddiy va asosiy tajribani qo‘lga kiritdi. OOO «Progress Solution Technologies» yuqori texnologiyalar bozorida muvaffaqiyatli rivojlanmoqda.",
+    "description3": "Bizning bozorimizda to‘rt yildan ortiq faoliyat yuritamiz va yuqori texnologik IT-sohada keng ko‘lamli loyihalarni amalga oshirish bo‘yicha tajribaga ega."
+  },
+  "client": {
+    "title": "Bizning mijozlar va hamkorlar"
+  },
+  "carusel": {
+    "title": "Loyihalarimiz bilan tanishing"
+  },
+  "projects": {
+    "bisyor": "Internet do'koni",
+    "agrobuy": "Internet do'koni",
+    "xalq_talim": "Veb-sayt",
+    "dana": "Internet do'koni",
+    "karyera_xizmati": "Veb tizim",
+    "profi_university": "Veb-sayt",
+    "ichki_hujjat": "Veb tizim",
+    "ijod_uz": "Veb-sayt",
+    "kzo_fvv": "Mobil ilova"
+  },
+
+  "services": {
+    "smm": {
+      "title": "SMM xizmati",
+      "description": "Ijtimoiy tarmoqlarni targ'ib qilish va targ'ib qilish uchun onlayn xizmat. Ijtimoiy tarmoqlarda obunachilar, ko'rishlar, sharhlar",
+      "icon": "https://progress-solution.uz/storage/services/1702638443smm223.svg"
+    },
+    "technical_task": {
+      "title": "Texnik Vazifa Yozish",
+      "description": "Texnik Vazifalar (TV) yozish",
+      "icon": "https://progress-solution.uz/storage/services/1702638550interface-control-sv263.svg"
+    },
+    "telegram_bot": {
+      "title": "Telegram bot",
+      "description": "Telegram bot - Bu avtomatlashtirilgan Telegram xizmati",
+      "icon": "https://progress-solution.uz/storage/services/1699451253Bot667.svg"
+    },
+    "seo": {
+      "title": "SEO xizmati",
+      "description": "SEO optimallashtish – bu raqobatchilardan saytingiz yuqorida bo’lishi",
+      "icon": "https://progress-solution.uz/storage/services/1699451061Search-Engine-Optimi20.svg"
+    },
+    "mobile_app": {
+      "title": "Mobil Ilova",
+      "description": "Mobil ilova – bu maʼlum bir platforma uchun ishlab chiqilgan mobil dastur",
+      "icon": "https://progress-solution.uz/storage/services/1699450855icons8-mobile-app-65463.png"
+    },
+    "ai": {
+      "title": "AI xizmati",
+      "description": "AI - bu sun'iy ong orqali ma'lumotlarni avtomatik tarzda qabul qilish va uzatish",
+      "icon": "https://progress-solution.uz/storage/services/16994504083838.png"
+    }
+  },
+  "solution_title": "Biz haqiqatdan ham yangi IT yechimlarni taqdim etamiz",
+  "risk_management_title": "Risk boshqaruvi",
+  "risk_management_description": "Biz sizning mahsulotingizni belgilangan muddatda va sifatli tarzda ishlab chiqarishga tayyormiz",
+  "analytic_solution_title": "Analitik yechim",
+  "analytic_solution_description": "Bizning jamoa sizlar bilan har qanday analitik muammoni yechishga tayyor",
+  "business_security_title": "Biznes xavfsizligi",
+  "business_security_description": "Biznesning eng muhim jihati bu o'zaro ishonch va xavfsizlik. Biz sizlarga kuchli ishonch va xavfsizlikni kafolatlaymiz",
+  "product_analysis_title": "Mahsulot tahlili",
+  "product_analysis_description": "Mahsulotingizni har qadamda, har joyda siz bilan tahlil qilishga tayyormiz va biz bundan mamnunmiz",
+  "best_quality_title": "Eng yaxshi sifat",
+  "best_quality_description": "Bizning maqsadimiz sifat. Sifat bor joyda baraka, rizq hamisha bo'ladi va biz uchun eng muhimi mijozning mamnunligi",
+  "it_management_title": "IT xizmatlarni boshqarish",
+  "it_management_description": "Siz o'zingizning mahsulotingizni har daqiqada nazorat qilishingiz mumkin va xohishingizga qarab o'zgartirib berishga tayyormiz"
+}

@@ -1,76 +1,178 @@
+import { useState, useRef } from "react";
+import axios from "axios";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState("");
+  const [error, setError] = useState("");
+  const nameRef = useRef(null);
+  const callRef = useRef(null);
+
+  const SendMessage = async (event) => {
+    event.preventDefault();
+    const name = nameRef.current.value;
+    const call = callRef.current.value;
+
+    // Validate form inputs
+    if (!name || !call) {
+      setError(t("footer.newsletter.error.required"));
+      setTimeout(() => setError(""), 3000);
+      return;
+    }
+
+    const phonePattern = /^\+998\d{9}$/;
+    if (!phonePattern.test(call)) {
+      setError(t("footer.newsletter.error.phone"));
+      setTimeout(() => setError(""), 3000);
+      return;
+    }
+
+    setLoading(true);
+    const token = "7344232747:AAEjaU6XXZ9YPTfze-rKtNg2X1oBCD2JdQ0";
+    const chat_id = 7015507246;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    const messageContext = `Ismi: ${name}\nTelefon raqami: ${call}`;
+
+    try {
+      await axios.post(url, {
+        chat_id: chat_id,
+        text: messageContext
+      });
+      setNotification(t("footer.newsletter.notification.success"));
+      nameRef.current.value = "";
+      callRef.current.value = "";
+    } catch (error) {
+      console.error(error);
+      setNotification(t("footer.newsletter.notification.failure"));
+    } finally {
+      setLoading(false);
+      setTimeout(() => setNotification(""), 3000);
+    }
+  };
 
   return (
-    <footer className="bg-white pb-8 px-4">
-      {/* Logo va matn */}
-      <div className="flex container mx-auto flex-wrap items-center lg:flex-row lg:items-start md:justify-around xl:justify-between space-y-6 lg:space-y-0 xs:space-x-4 lg:space-x-0">
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left pb-4">
-          <a href="#">
-            <img
-              src="https://progress-solution.uz/storage/platforms/1700150090logo_(2)484.png"
-              alt="Logo"
-              className="h-16 w-auto mb-4"
-            />
-          </a>
+    <footer className="bg-gradient-to-t from-[#e0e6f8] to-[#f0f4ff] py-10 px-6 md:px-12 lg:px-24">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Logo and Social Media Links */}
+        <div>
+          <img
+            src="https://progress-solution.uz/storage/platforms/1700150090logo_(2)484.png"
+            alt="Progress Solution Technologies"
+            className="h-12 mb-4"
+          />
+          <p className="text-gray-600">{t("footer.openForYou")}</p>
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="https://www.facebook.com"
+              className="text-gray-600 hover:text-gray-900">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://t.me"
+              className="text-gray-600 hover:text-gray-900">
+              <i className="fab fa-telegram-plane"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              className="text-gray-600 hover:text-gray-900">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              className="text-gray-600 hover:text-gray-900">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
 
-        {/* Menyu bo'limi */}
-        <ul className="flex flex-col space-y-2 text-gray-700 lg:space-y-4">
-          <li className="font-bold text-black">
-            <a href="#">{t("footer.menu")}</a>
-          </li>
-          <li>
-            <a href="#">{t("footer.home")}</a>
-          </li>
-          <li>
-            <a href="#">{t("footer.aboutUs")}</a>
-          </li>
+        {/* Services Section */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">
+            {t("footer.services.smm")}
+          </h3>
+          <ul className="text-gray-600 space-y-2">
+            <li>{t("footer.services.smm")}</li>
+            <li>{t("footer.services.technicalAssignment")}</li>
+            <li>{t("footer.services.telegramBot")}</li>
+            <li>{t("footer.services.seo")}</li>
+            <li>{t("footer.services.mobileApp")}</li>
+            <li>{t("footer.services.aiService")}</li>
+          </ul>
+        </div>
 
-          <li>
-            <a href="#">{t("footer.contacts")}</a>
-          </li>
-        </ul>
-
-        {/* Kontaktlar bo'limi */}
-        <div className="flex gap-20 xs:gap-3 md:gap-20 xs:space-x-0 md:space-x-4 justify-between xs:flex-col md:flex-row">
-          <ul className="flex flex-col space-y-2 text-gray-700 lg:space-y-4">
-            <li className="font-bold text-black">
-              <a href="#">{t("footer.contacts")}</a>
+        {/* Latest Blogs Section */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">
+            {t("footer.latestBlogs.title")}
+          </h3>
+          <ul className="text-gray-600 space-y-2">
+            <li>
+              <a href="#" className="hover:text-blue-600">
+                {t("footer.latestBlogs.webSite")}
+              </a>
+              <span className="text-xs text-gray-500 block">
+                Noyabr 15, 2023
+              </span>
             </li>
             <li>
-              <a href="#">{t("footer.contactAddress")}</a>
+              <a href="#" className="hover:text-blue-600">
+                {t("footer.latestBlogs.seo")}
+              </a>
+              <span className="text-xs text-gray-500 block">
+                Noyabr 15, 2023
+              </span>
             </li>
             <li>
-              <a href="#">{t("footer.email")}</a>
-            </li>
-            <li>
-              <a href="#">{t("footer.phone1")}</a>
-            </li>
-            <li>
-              <a href="#">{t("footer.phone2")}</a>
+              <a href="#" className="hover:text-blue-600">
+                {t("footer.latestBlogs.businessStrategy")}
+              </a>
+              <span className="text-xs text-gray-500 block">
+                Noyabr 15, 2023
+              </span>
             </li>
           </ul>
+        </div>
 
-          {/* Obuna bo'limi */}
-          <div className="w-full lg:w-auto">
-            <ul className="mb-4">
-              <li className="font-bold text-black lg:text-left">
-                {t("footer.subscribeTitle")}
-              </li>
-            </ul>
-            <div className="flex items-center space-x-4 xs:space-x-0 md:space-x-4 gap-2 bg-[#F2F2F2] border-2 p-3 rounded-[45px]">
+        {/* Newsletter Subscription and Contact Form */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">
+            {t("footer.newsletter.title")}
+          </h3>
+          <p className="text-gray-600 mb-4">
+            {t("footer.newsletter.description")}
+          </p>
+          <div className="relative mb-6">
+            <form onSubmit={SendMessage} className="flex flex-col space-y-4">
               <input
                 type="text"
-                placeholder={t("footer.subscribePlaceholder")}
-                className="w-full lg:w-auto px-4 py-2 bg-none rounded-xl focus:outline-none bg-[#F2F2F2]"
+                ref={nameRef}
+                placeholder={t("footer.newsletter.namePlaceholder")}
+                className="p-3 border border-gray-300 rounded-xl"
               />
-              <button className="bg-[#F42C37] text-white px-4 py-2 rounded-3xl hover:bg-blue-700 transition duration-300 w-[200px] lg:w-auto">
-                {t("footer.subscribeButton")}
+              <input
+                type="tel"
+                ref={callRef}
+                pattern="\+998\d{9}"
+                placeholder={t("footer.newsletter.phonePlaceholder")}
+                className="p-3 border border-gray-300 rounded-xl"
+                onInvalid={(e) =>
+                  e.target.setCustomValidity(t("footer.newsletter.error.phone"))
+                }
+                onInput={(e) => e.target.setCustomValidity("")}
+              />
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-red-800 text-white font-medium p-3 rounded-2xl">
+                {loading
+                  ? t("footer.newsletter.loading")
+                  : t("footer.newsletter.submit")}
               </button>
-            </div>
+              {notification && <p>{notification}</p>}
+              {error && <p>{error}</p>}
+            </form>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
-const clients = [
+import { useTranslation } from "react-i18next";
+
+const client = [
   {
     id: 1,
     name: "UzSAMA",
@@ -13,7 +15,7 @@ const clients = [
     id: 3,
     name: "Client 3",
     logo: "https://progress-solution.uz/storage/clients/1715145755logo588.svg"
-  }, // Replace with actual image paths
+  },
   {
     id: 4,
     name: "Client 4",
@@ -42,18 +44,18 @@ const clients = [
 ];
 
 const ClientsSection = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="py-16  bg-gray-100" id="clients">
+    <section className="py-16 bg-gray-100" id="clients">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-8">
-          Bizning mijozlar va hamkorlar
-        </h2>
+        <h2 className="text-3xl font-semibold mb-8">{t("client.title")}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {clients.map((client) => (
+          {client.map((clients) => (
             <div
-              key={client.id}
+              key={clients.id}
               className="flex justify-center items-center p-4 shadow-md bg-white rounded-lg hover:shadow-xl">
-              <img src={client.logo} alt={client.name} className="max-h-24" />
+              <img src={clients.logo} alt={clients.name} className="max-h-24" />
             </div>
           ))}
         </div>
