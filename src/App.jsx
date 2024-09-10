@@ -5,6 +5,11 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/homes/Home";
 import Footer from "./pages/Footer";
 import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import Clents from "./pages/clents/Clents";
+import Contact from "./pages/contact/Contact";
+import Service from "./pages/sercive/Service";
+import Partfolio from "./pages/partfolio/Partfolio";
 
 export default function App() {
   useEffect(() => {
@@ -22,7 +27,15 @@ export default function App() {
   return (
     <>
       <Navbar changeLanguage={changeLanguage} />
-      <Home />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/clent" element={<Clents />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/partfolio" element={<Partfolio />} />
+        {/* Add more routes here */}
+      </Routes>
       <Footer />
     </>
   );
