@@ -2,10 +2,6 @@ import { useTranslation } from "react-i18next";
 
 const services = [
   {
-    key: "smm",
-    icon: "https://progress-solution.uz/storage/services/1702638443smm223.svg"
-  },
-  {
     key: "technical_task",
     icon: "https://progress-solution.uz/storage/services/1702638550interface-control-sv263.svg"
   },

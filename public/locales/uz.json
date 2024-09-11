@@ -149,5 +149,12 @@
         "image": "17132697791096_75.png"
       }
     ]
-  }
+  },
+  "ФАҚ": "ФАҚ",
+  "title": "Sayt yaratish qancha vaqt oladi?",
+  "content": "Sayt yaratish muddati loyiha hajmi va murakkabligiga bog‘liq. Oddiy bir sahifali sayt uchun 1-2 hafta yetarli bo‘lishi mumkin, murakkabroq, ko‘p sahifali yoki e-commerce saytlar uchun esa 4-6 hafta va undan ko‘proq vaqt talab qilinishi mumkin.",
+  "title2": "Saytning narxi qancha bo‘ladi?",
+  "content2": "Narx loyiha murakkabligi, qo‘shiladigan funksiyalar va maxsus talablar asosida belgilanadi. Oddiy biznes saytlar uchun boshlang‘ich narx 500-1000 AQSH dollari atrofida bo‘lishi mumkin, lekin murakkab e-commerce yoki maxsus funksiyalar talablari bilan narx oshadi.",
+  "title3": "Saytni hosting va domen xizmatlarini ham ko‘rsatasizmi?",
+  "content3": "Ha, biz sizga hosting va domenni tanlashda yordam beramiz. Agar kerak bo‘lsa, to‘liq hosting va domenni o‘zimiz ta'minlaymiz yoki tavsiya beramiz."
 }

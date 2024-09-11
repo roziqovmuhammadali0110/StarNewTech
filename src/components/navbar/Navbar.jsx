@@ -57,39 +57,39 @@ const Navbar = () => {
         {/* Katta ekran uchun linklar */}
         <ul className="hidden lg:flex space-x-5">
           <li>
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("abouts")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/portfolio"
+            <a
+              href="#portfolio"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("portfolio")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/service"
+            <a
+              href="#service"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("service")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/client"
+            <a
+              href="#client"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("clients")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/contact"
+            <a
+              href="#contact"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("contact")}
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -143,44 +143,44 @@ const Navbar = () => {
         {isOpen && (
           <ul className="absolute top-16 left-0 w-full bg-white shadow-lg p-4 lg:hidden space-y-4">
             <li>
-              <Link
-                to="/about"
+              <a
+                href="#about"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("abouts")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/portfolio"
+              <a
+                href="#portfolio"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("portfolio")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/service"
+              <a
+                href="#service"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("service")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/client"
+              <a
+                href="#"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("clients")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/contact"
+              <a
+                href="#contact"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("contact")}
-              </Link>
+              </a>
             </li>
           </ul>
         )}

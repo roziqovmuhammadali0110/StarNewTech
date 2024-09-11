@@ -149,5 +149,14 @@
         "image": "17132697791096_75.png"
       }
     ]
-  }
+  },
+  "ФАҚ": "FAQ",
+  "title": "How long does it take to build a website?",
+  "content": "The time required to build a website depends on the size and complexity of the project. For a simple one-page website, 1-2 weeks may be sufficient, but more complex, multi-page, or e-commerce sites can take 4-6 weeks or longer.",
+
+  "title2": "How much does a website cost?",
+  "content2": "The cost is determined by the complexity of the project, the features included, and any special requirements. For a basic business website, the starting price is usually around $500-$1,000, but more complex e-commerce sites or custom functionalities can increase the cost.",
+
+  "title3": "Do you provide hosting and domain services?",
+  "content3": "Yes, we assist in choosing hosting and domain services. If necessary, we can fully manage the hosting and domain registration for you or recommend the best options."
 }

@@ -6,11 +6,6 @@ import Home from "./components/homes/Home";
 import Footer from "./pages/Footer";
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Clents from "./pages/clents/Clents";
-import Contact from "./pages/contact/Contact";
-import Service from "./pages/sercive/Service";
-import Partfolio from "./pages/partfolio/Partfolio";
-import About from "./pages/about/About";
 
 export default function App() {
   useEffect(() => {
@@ -31,11 +26,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/client" element={<Clents />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/portfolio" element={<Partfolio />} />
+
         {/* Add more routes here */}
       </Routes>
       <Footer />

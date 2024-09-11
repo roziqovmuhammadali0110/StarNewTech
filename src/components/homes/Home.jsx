@@ -3,6 +3,7 @@ import Abouts from "../Abouts";
 
 import Carusel from "../Carusel";
 import ClientsSection from "../clents/Clents";
+import Faq from "../Faq";
 import Services from "../Service";
 import Solution from "../Solution";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Solution />
       <Services />
       <ClientsSection />
+      <Faq />
     </div>
   );
 };
