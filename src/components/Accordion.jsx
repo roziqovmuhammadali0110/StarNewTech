@@ -19,7 +19,11 @@ const AccordionItem = ({ title, content, isOpen, onClick, itemStyles }) => {
           fontSize: "20px"
         }}
         onClick={onClick}>
-        <span style={{ fontWeight: "600" }}>{title}</span>
+        <span
+          className="xs:text-[15px] md:text-[18px] xl:text-[20px]"
+          style={{ fontWeight: "500" }}>
+          {title}
+        </span>
         <div
           style={{
             width: "44px",
@@ -87,12 +91,12 @@ const Accordion = () => {
     backgroundColor: "white", // Change this to your desired background color
     color: "#676D83", // Change this to your desired text color
     borderRadius: "0px", // Change this to your desired border radius
-    fontWeight: "600"
+    fontWeight: "700"
   };
 
   return (
     <div style={{ width: "100%", margin: "0 auto" }}>
-      <div className="w-full items-center justify-center flex flex-col py-4 text-[40px] font-bold">
+      <div className="w-full items-center justify-center flex flex-col py-4 text-[40px] xs:text-[20px] md:text-[30px] xl:text-[40px] font-bold">
         <h1>{t("ФАҚ")}</h1>
       </div>
       {items.map((item, index) => (
