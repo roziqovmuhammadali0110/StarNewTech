@@ -156,5 +156,15 @@
   "title2": "Saytning narxi qancha bo‘ladi?",
   "content2": "Narx loyiha murakkabligi, qo‘shiladigan funksiyalar va maxsus talablar asosida belgilanadi. Oddiy biznes saytlar uchun boshlang‘ich narx 500-1000 AQSH dollari atrofida bo‘lishi mumkin, lekin murakkab e-commerce yoki maxsus funksiyalar talablari bilan narx oshadi.",
   "title3": "Saytni hosting va domen xizmatlarini ham ko‘rsatasizmi?",
-  "content3": "Ha, biz sizga hosting va domenni tanlashda yordam beramiz. Agar kerak bo‘lsa, to‘liq hosting va domenni o‘zimiz ta'minlaymiz yoki tavsiya beramiz."
+  "content3": "Ha, biz sizga hosting va domenni tanlashda yordam beramiz. Agar kerak bo‘lsa, to‘liq hosting va domenni o‘zimiz ta'minlaymiz yoki tavsiya beramiz.",
+
+  "contactUs": "Biz bilan bog'laning",
+  "email": "Email",
+  "phone": "Telefon",
+  "address": "Manzil",
+  "sendMessage": "Bizga xabar yuboring",
+  "name": "Ism",
+  "phoneOrEmail": "Telefon raqam yoki email",
+  "yourMessage": "Xabaringiz...",
+  "sendButton": "Xabar yuborish"
 }

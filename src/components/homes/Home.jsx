@@ -3,7 +3,9 @@ import Abouts from "../Abouts";
 
 import Carusel from "../Carusel";
 import ClientsSection from "../clents/Clents";
+import ContactForm from "../Contact";
 import Faq from "../Faq";
+import OurTeam from "../OurTeam";
 import Services from "../Service";
 import Solution from "../Solution";
 
@@ -16,7 +18,9 @@ const Home = () => {
       <Solution />
       <Services />
       <ClientsSection />
+      <OurTeam />
       <Faq />
+      <ContactForm />
     </div>
   );
 };

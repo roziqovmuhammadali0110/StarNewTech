@@ -33,7 +33,7 @@ const Services = () => {
       data-aos-easing="ease-in-sine"
       className="py-10 bg-gray-100"
       id="service">
-      <h2 className="text-center text-3xl font-bold mb-8">
+      <h2 className="text-center text-3xl xs:text-[20px] md:text-[30px] xl:text-[40px] font-bold mb-8">
         {t("services.header")}
       </h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0">

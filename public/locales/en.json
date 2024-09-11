@@ -158,5 +158,15 @@
   "content2": "The cost is determined by the complexity of the project, the features included, and any special requirements. For a basic business website, the starting price is usually around $500-$1,000, but more complex e-commerce sites or custom functionalities can increase the cost.",
 
   "title3": "Do you provide hosting and domain services?",
-  "content3": "Yes, we assist in choosing hosting and domain services. If necessary, we can fully manage the hosting and domain registration for you or recommend the best options."
+  "content3": "Yes, we assist in choosing hosting and domain services. If necessary, we can fully manage the hosting and domain registration for you or recommend the best options.",
+
+  "contactUs": "Contact Us",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "sendMessage": "Send us a Message Below",
+  "name": "Name",
+  "phoneOrEmail": "Phone number or email",
+  "yourMessage": "Your Message...",
+  "sendButton": "Send Message"
 }
