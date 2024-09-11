@@ -54,8 +54,7 @@ const Footer = () => {
 
   return (
     <footer
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
+      data-aos="zoom-in-down"
       className="bg-gradient-to-t from-[#fbfcfd] to-[#f9fafd] py-10 px-6 md:px-12 lg:px-24">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo and Social Media Links */}

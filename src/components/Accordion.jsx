@@ -101,6 +101,7 @@ const Accordion = () => {
       </div>
       {items.map((item, index) => (
         <AccordionItem
+          data-aos="fade-up-right"
           key={index}
           title={item.title}
           content={item.content}
