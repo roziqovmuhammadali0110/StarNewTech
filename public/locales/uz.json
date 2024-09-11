@@ -166,5 +166,10 @@
   "name": "Ism",
   "phoneOrEmail": "Telefon raqam yoki email",
   "yourMessage": "Xabaringiz...",
-  "sendButton": "Xabar yuborish"
+  "sendButton": "Xabar yuborish",
+  "Contact": "Aloqa",
+  "our_team": "Bizning Jamoa",
+  "experience": "Tajriba",
+  "projects_number": "Loyihalar soni",
+  "technologies": "Texnologiyalar"
 }

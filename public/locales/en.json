@@ -168,5 +168,10 @@
   "name": "Name",
   "phoneOrEmail": "Phone number or email",
   "yourMessage": "Your Message...",
-  "sendButton": "Send Message"
+  "sendButton": "Send Message",
+  "Contact": "Contact",
+  "our_team": "Our Team",
+  "experience": "Experience",
+  "projects_number": "Projects number",
+  "technologies": "Technologies"
 }

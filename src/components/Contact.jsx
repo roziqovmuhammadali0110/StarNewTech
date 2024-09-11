@@ -8,7 +8,7 @@ const ContactForm = () => {
       className="flex justify-center items-center flex-col container mx-auto py-10 bg-gray-100"
       id="contact">
       <div className="w-full items-center justify-start text-[40px] xs:text-[20px] md:text-[30px] xl:text-[40px] font-bold pb-5">
-        <h1>Contact</h1>
+        <h1>{t("Contact")}</h1>
       </div>
       <div className="bg-white shadow-lg rounded-lg w-full max-w-6xl p-6 md:flex">
         {/* Chap qism */}
