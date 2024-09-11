@@ -92,6 +92,9 @@ const Accordion = () => {
 
   return (
     <div style={{ width: "100%", margin: "0 auto" }}>
+      <div className="w-full items-center justify-center flex flex-col py-4 text-[40px] font-bold">
+        <h1>{t("ФАҚ")}</h1>
+      </div>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
