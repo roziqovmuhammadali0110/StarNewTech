@@ -1,5 +1,6 @@
 import Header from "../../pages/Header";
-import About from "../about/About";
+import Abouts from "../Abouts";
+
 import Carusel from "../Carusel";
 import ClientsSection from "../clents/Clents";
 import Services from "../Service";
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <div className=" space-y-4 bg-gray-100">
       <Header />
-      <About />
+      <Abouts />
       <Carusel />
       <Solution />
       <Services />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/image.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,39 +57,39 @@ const Navbar = () => {
         {/* Katta ekran uchun linklar */}
         <ul className="hidden lg:flex space-x-5">
           <li>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("abouts")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#portfolio"
+            <Link
+              to="/portfolio"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("portfolio")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#service"
+            <Link
+              to="/service"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("service")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#clients"
+            <Link
+              to="/client"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("clients")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("contact")}
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -142,44 +143,44 @@ const Navbar = () => {
         {isOpen && (
           <ul className="absolute top-16 left-0 w-full bg-white shadow-lg p-4 lg:hidden space-y-4">
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("abouts")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#portfolio"
+              <Link
+                to="/portfolio"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("portfolio")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#service"
+              <Link
+                to="/service"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("service")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#clients"
+              <Link
+                to="/client"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("clients")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("contact")}
-              </a>
+              </Link>
             </li>
           </ul>
         )}

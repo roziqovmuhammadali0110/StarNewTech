@@ -1,3 +1,5 @@
+//import Services from "../../components/Service";
+
 const Service = () => {
   return (
     <div>
@@ -6,6 +8,7 @@ const Service = () => {
         alt=""
         className="w-full"
       />
+      <div>{/* <Services /> */}</div>
     </div>
   );
 };

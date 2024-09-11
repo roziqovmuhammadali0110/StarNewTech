@@ -1,3 +1,5 @@
+//import Carusel from "../../components/Carusel";
+
 const Partfolio = () => {
   return (
     <div>
@@ -6,6 +8,7 @@ const Partfolio = () => {
         alt=""
         className="w-full"
       />
+      <div>{/* <Carusel /> */}</div>
     </div>
   );
 };

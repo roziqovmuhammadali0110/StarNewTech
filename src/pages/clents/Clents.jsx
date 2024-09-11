@@ -1,3 +1,5 @@
+//import ClientsSection from "../../components/clents/Clents";
+
 const Clents = () => {
   return (
     <div className="">
@@ -6,6 +8,7 @@ const Clents = () => {
         alt=""
         className="w-full h-1/2"
       />
+      <div>{/* <ClientsSection /> */}</div>
     </div>
   );
 };

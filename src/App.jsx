@@ -10,6 +10,7 @@ import Clents from "./pages/clents/Clents";
 import Contact from "./pages/contact/Contact";
 import Service from "./pages/sercive/Service";
 import Partfolio from "./pages/partfolio/Partfolio";
+import About from "./pages/about/About";
 
 export default function App() {
   useEffect(() => {
@@ -30,10 +31,11 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/clent" element={<Clents />} />
+        <Route path="/client" element={<Clents />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/partfolio" element={<Partfolio />} />
+        <Route path="/portfolio" element={<Partfolio />} />
         {/* Add more routes here */}
       </Routes>
       <Footer />
