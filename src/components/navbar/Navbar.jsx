@@ -78,7 +78,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#client"
+              href="#clients"
               className="hover:text-gray-700 hover:font-bold hover:underline">
               {t("clients")}
             </a>
@@ -167,7 +167,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#clients"
                 className="block hover:text-gray-700"
                 onClick={toggleMenu}>
                 {t("clients")}

@@ -36,7 +36,7 @@ const OurTeam = () => {
   const { t } = useTranslation(); // i18n qo'llash
 
   return (
-    <div className="pb-10 container mx-auto">
+    <div className="pb-10 container mx-auto" id="clients">
       <h2 className="text-center text-3xl font-bold mb-10">{t("our_team")}</h2>
       <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
         {teamMembers.map((member, index) => (
